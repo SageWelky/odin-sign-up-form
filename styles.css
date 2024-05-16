@@ -173,6 +173,7 @@ fieldset>div>label {
   color: rgb(75, 75, 75, 0.75);
   width: 200px;
   font-weight: 500;
+  padding-left: 6px;
 }
 
 fieldset>div>input {
