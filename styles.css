@@ -52,9 +52,9 @@ html, body {
 
 #credit-tag {
   position: absolute;
-  bottom: 0;
+  bottom: 5px;
   left: calc(16vw - 75px);
-  color: white;
+  color: rgb(255, 255, 255, .7);
 }
 
 #call-to-action-section {
