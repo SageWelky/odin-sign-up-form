@@ -1,0 +1,193 @@
+html, body {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#site-container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template: 400px 331px 150px 1fr / 1fr 1fr 1fr;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#image-section {
+  grid-area: 1 / 1 / span 4 / span 1;
+  background-image: url(./images/cityRiver.avif);
+  background-size:cover;
+  display: grid;
+  grid-template: 1fr 1fr 1fr 1fr 1fr 1fr / 1fr;
+  font-family: "Merriweather", serif;
+}
+
+
+#logo-box {
+  grid-row: 3 / span 1;
+  height: 75%;
+  background-color: rgba(0, 0, 0, 0.500);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  overflow: hidden;
+}
+
+#logo-box>img {
+  height: 60%;
+  overflow: visible;
+  width: auto;
+}
+
+#logo-box>span {
+  font-size: 44px;
+  color: aqua;
+  font-weight: 700;
+}
+
+#call-to-action-section {
+  grid-area: 1 / 2 / span 1 / span 2;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  flex-direction: column;
+  padding: 20px;
+  background-color: whitesmoke;
+  font-size: 28px;
+  padding: 62px;
+  font-weight: 500;
+}
+
+#call-to-action-section>p {
+  width: 85%;
+  height: auto;
+}
+
+#login-section {
+  grid-area: 3 / 2 / span 1 / span 2;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-left: 62px;
+  margin-top: 40px;
+  gap: 10px;
+  min-height: 100px;
+}
+
+#login-section>input {
+  height: 50px;
+  width: 250px;
+  background-color:rgb(0, 228, 228);
+  border-radius: 10px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  box-shadow: 0px 0px 9px darkgray;
+  margin-bottom: 20px;
+}
+
+#login-section>input:hover {
+  background-color: lightseagreen;
+}
+
+#login-section>input:active {
+  background-color: rgb(27, 144, 138);
+}
+
+#login-section>div>a {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(0, 212, 212);
+}
+
+#login-section>div>span {
+  font-size: 18px;
+  font-weight: 500;
+  color: black;
+}
+
+#already-has-account-container {
+  display: inline;
+}
+
+#form-section {
+  grid-area: 2 / 2 / span 1 / span 2;
+  box-shadow: 0 2px 15px rgb(187, 187, 187);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  align-items: start;
+  padding-left: 50px;
+  min-height: 272px;
+}
+
+#form-heading {
+  grid-row: 2 / span 1;
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 12px;
+}
+
+form {
+  grid-row: 3 / span 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 7px;
+}
+
+fieldset {
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: start;
+  gap: 40px;
+}
+
+.form-input-container {
+  width: max(180px, 30px + 25%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+fieldset>div>label {
+  color: rgb(75, 75, 75, 0.75);
+  width: 200px;
+  font-weight: 500;
+}
+
+fieldset>div>input {
+  border-radius: 5px;
+  border: none;
+  border: 1px solid darkgray;
+  height: 28px;
+  width: 100%;
+  color: black;
+  padding-left: 12px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+fieldset>div>input::placeholder {
+  color: lightgray;
+  opacity: 1;
+  font-weight: 100;
+}
+
+fieldset>div>input:focus{
+  box-shadow: 1px 1px 4px darkgray;
+  outline: none;
+  border: 1px solid rgba(0, 95, 204);
+}
